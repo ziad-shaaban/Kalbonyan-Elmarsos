@@ -1,0 +1,240 @@
+/* -------------universal selector---------- */
+* {
+  /* border-top: 10px solid #1098ad; */
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 800px;
+  margin: 0 auto;
+}
+
+body {
+  color: #444;
+  font-family: sans-serif;
+  border-top: 10px solid #1098ad;
+  position: relative;
+}
+
+.main-header {
+  background-color: #f7f7f7;
+  padding: 40px 20px;
+  margin-bottom: 60px;
+  height: 80px;
+}
+
+nav {
+  font-size: 18px;
+  text-align: center;
+}
+
+article {
+  margin-bottom: 60px;
+  /* position: relative; */
+}
+
+.post-header {
+  margin-bottom: 40px;
+  /* position: relative; */
+}
+
+aside {
+  background-color: #f7f7f7;
+  border-top: 5px solid #1098ad;
+  border-bottom: 5px solid #1098ad;
+  padding: 50px 0;
+  width: 500px;
+}
+
+h1,
+h2,
+h3 {
+  color: #1098ad;
+}
+
+h1 {
+  font-size: 26px;
+  text-transform: uppercase;
+  font-style: italic;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 40px;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+h3 {
+  font-size: 30px;
+  margin-bottom: 20px;
+  margin-top: 50px;
+}
+
+h4 {
+  font-size: 20px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+p {
+  font-size: 22px;
+  line-height: 1.5; /* line-height: number => (number * font-size)*/
+  margin-bottom: 50px;
+}
+
+ul,
+ol {
+  margin-left: 50px;
+  margin-bottom: 20px;
+}
+
+li {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+li:last-child {
+  margin-bottom: 0;
+}
+/* footer p {
+  font-size: 16px;
+} */
+
+#author {
+  font-style: italic;
+}
+
+#copyright {
+  font-size: 16px;
+}
+
+.related-author {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* aside ul li {
+  list-style: none;
+} */
+
+.related {
+  list-style: none;
+}
+
+/* body {
+  background-color: #f7f7f7;
+} */
+
+/* .first-li {
+  font-weight: bold;
+} */
+
+li:first-child {
+  font-weight: bold;
+} /* child is the child of the same element => first child of li*/
+
+li:last-child {
+  font-style: italic;
+}
+
+li:nth-child(2) {
+  /* color: red; */
+}
+/*to select specific child, value => number or (odd / even)*/
+article p:first-child {
+  color: red;
+}
+/* :first or last-child the child should be ascending directly from the parent not inside another element */
+
+a:link {
+  color: #1098ad;
+  text-decoration: none;
+} /* :link => all a that have href="#"*/
+
+a:visited {
+  color: #1098ad;
+}
+
+a:hover {
+  color: orangered;
+  font-weight: bold;
+  text-decoration: underline orangered;
+  /* text-decoration: type-of-line shape/style color */
+}
+
+a:active {
+  background-color: black;
+  font-style: italic;
+}
+
+/* LVHA => short for 4 pseudo-class */
+
+/* 
+-------------------- specificity-----------------
+1. !important.
+2. inline-style.
+3. ID.
+4. class and pseudo-class
+5. element selector.
+*/
+/* ----------------inheritance */
+/* nav a:link {
+  font-size: 18px;
+} */
+
+.post-image {
+  width: 100%;
+  height: auto;
+}
+
+/* ------------DEMO-------------------*/
+/* nav a:link {
+  background-color: orangered;
+  margin: 20px;
+  padding: 20px;
+} */
+
+button {
+  font-size: 22px;
+  padding: 20px;
+  cursor: pointer;
+  position: absolute;
+  bottom: 50px;
+  right: 50px;
+} /* relative to viewport if we don't specify relative element*/
+
+/* pseudo-class => :           pseudo-element => :: */
+
+h1::first-letter {
+  font-style: normal;
+  margin-right: 5px;
+}
+
+/* h2::first-letter {
+  font-size: 80px;
+} */
+
+/* h3 + p::first-line {
+  color: red;
+} */
+
+/* sibling => '>' direct child
+              '+' first direct child
+              '~' all child after element
+*/
+
+h2::after {
+  content: "Top"; /*should specify*/
+  background-color: #ffe70e;
+  color: #444;
+  font-size: 16px;
+  font-weight: bold;
+  display: inline-block;
+  padding: 5px 10px;
+  position: absolute;
+  top: -10px;
+  right: -15px;
+}
+/* all pseudo-element => inline*/
