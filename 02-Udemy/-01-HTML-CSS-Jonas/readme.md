@@ -19,7 +19,6 @@
 ---
 [Course-Link](https://www.udemy.com/course/design-and-develop-a-killer-website-with-html5-and-css3)<br>
 
-### certification link
-![certification link](https://www.udemy.com/certificate/UC-e9f79b08-e520-4c03-beed-04a096a16a3d/)
+<a href="https://www.udemy.com/certificate/UC-e9f79b08-e520-4c03-beed-04a096a16a3d/">certification link<a/>
 
-![Certificate](Build-Responsive-Real-World-Websites-with-HTML-and-CSS-certificate.jpg)
+![Certificate](certification.jpg)
